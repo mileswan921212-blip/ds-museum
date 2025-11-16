@@ -216,3 +216,49 @@ body {
     color: black;
     font-weight: bold;
 }
+/* ----- GRAPH SECTION ----- */
+
+.graph-container {
+    position: relative;
+    width: 350px;
+    height: 250px;
+    margin: 40px auto;
+}
+
+.graph-node {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: #3b82f6;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: bold;
+    box-shadow: 0 0 10px #3b82f6;
+    transition: 0.3s;
+}
+
+.graph-node:hover {
+    transform: scale(1.18);
+    box-shadow: 0 0 18px #60a5fa;
+}
+
+/* Node positions */
+#A { top: 30px; left: 80px; }
+#B { top: 30px; left: 230px; }
+#C { top: 160px; left: 80px; }
+#D { top: 160px; left: 230px; }
+
+.graph-lines {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.graph-lines line {
+    stroke: #38bdf8;
+    stroke-width: 3;
+}
