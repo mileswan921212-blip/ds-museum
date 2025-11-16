@@ -126,10 +126,60 @@ function renderQueue() {
 </section>
 
 
-    <section class="section" id="linkedlists">
-        <h2>Linked Lists</h2>
-        <p>Nodes, pointers, traversal — all made simple.</p>
-    </section>
+  <section class="section" id="linkedlists">
+    <h2>Linked Lists</h2>
+
+    <p>Build and visualize a linked list step by step.</p>
+
+    <div class="ll-container" id="llContainer">
+        <!-- nodes will be drawn here -->
+    </div>
+
+    <div class="ll-buttons">
+        <button onclick="addNode()">Add Node</button>
+        <button onclick="removeNode()">Remove Node</button>
+    </div>
+
+    <h3 class="code-title">Linked List JavaScript Code</h3>
+    <div class="code-block">
+<pre>
+let linkedList = [];
+
+function addNode() {
+    const value = "N" + (linkedList.length + 1);
+    linkedList.push(value);
+    renderLinkedList();
+}
+
+function removeNode() {
+    if (linkedList.length > 0) {
+        linkedList.pop();
+        renderLinkedList();
+    }
+}
+
+function renderLinkedList() {
+    const container = document.getElementById("llContainer");
+    container.innerHTML = "";
+
+    linkedList.forEach((value, index) => {
+        const node = document.createElement("div");
+        node.className = "ll-node";
+        node.innerText = value;
+        container.appendChild(node);
+
+        if (index < linkedList.length - 1) {
+            const arrow = document.createElement("span");
+            arrow.className = "ll-arrow";
+            arrow.innerHTML = "→";
+            container.appendChild(arrow);
+        }
+    });
+}
+</pre>
+    </div>
+</section>
+
 
     <section class="section" id="trees">
         <h2>Trees</h2>
