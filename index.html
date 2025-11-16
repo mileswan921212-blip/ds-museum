@@ -23,10 +23,31 @@
         </nav>
     </header>
 
-    <section class="section" id="arrays">
-        <h2>Arrays</h2>
-        <p>Learn how arrays work with examples and visual diagrams.</p>
-    </section>
+ <section class="section" id="arrays">
+    <h2>Arrays</h2>
+    <p>Arrays are a basic data structure that stores elements in a continuous memory block.</p>
+
+    <div class="array-box">
+        <div class="array-item">10</div>
+        <div class="array-item">22</div>
+        <div class="array-item">35</div>
+        <div class="array-item">47</div>
+        <div class="array-item">53</div>
+        <div class="array-item">66</div>
+    </div>
+
+    <p class="code-title">Example Code (C++)</p>
+
+    <pre class="code-block">
+int arr[6] = {10, 22, 35, 47, 53, 66};
+
+cout << "Array elements: ";
+for (int i = 0; i < 6; i++) {
+    cout << arr[i] << " ";
+}
+    </pre>
+</section>
+
 
     <section class="section" id="stacks">
         <h2>Stacks</h2>
