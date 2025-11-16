@@ -211,9 +211,25 @@ function renderLinkedList() {
 
 
     <section class="section" id="graphs">
-        <h2>Graphs</h2>
-        <p>Understand graph theory with clarity and interactive examples.</p>
-    </section>
+    <h2>Graphs</h2>
+    <p>Visualizing nodes and edges in a simple graph structure:</p>
+
+    <div class="graph-container">
+        <div class="graph-node" id="A">A</div>
+        <div class="graph-node" id="B">B</div>
+        <div class="graph-node" id="C">C</div>
+        <div class="graph-node" id="D">D</div>
+
+        <!-- edges (lines) -->
+        <svg class="graph-lines">
+            <line x1="100" y1="60" x2="250" y2="60" />
+            <line x1="250" y1="60" x2="250" y2="180" />
+            <line x1="100" y1="60" x2="100" y2="180" />
+            <line x1="100" y1="180" x2="250" y2="180" />
+        </svg>
+    </div>
+</section>
+
 
 </body>
 </html>
