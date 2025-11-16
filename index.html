@@ -49,10 +49,32 @@ for (int i = 0; i < 6; i++) {
 </section>
 
 
-    <section class="section" id="stacks">
-        <h2>Stacks</h2>
-        <p>Understand LIFO operations through animations.</p>
-    </section>
+   <section class="section" id="stacks">
+    <h2>Stacks</h2>
+    <p>A stack is a Linear Data Structure following LIFO (Last In, First Out).</p>
+
+    <div class="stack-box">
+        <div class="stack-item">5</div>
+        <div class="stack-item">12</div>
+        <div class="stack-item">18</div>
+        <div class="stack-item top">33</div>
+    </div>
+
+    <p class="code-title">Example Code (C++)</p>
+
+    <pre class="code-block">
+stack&lt;int&gt; st;
+
+st.push(5);
+st.push(12);
+st.push(18);
+st.push(33);
+
+cout &lt;&lt; "Top element: " &lt;&lt; st.top();
+st.pop();
+    </pre>
+</section>
+
 
     <section class="section" id="queues">
         <h2>Queues</h2>
